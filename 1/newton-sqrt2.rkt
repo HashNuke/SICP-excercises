@@ -1,6 +1,6 @@
 #lang racket
 ;;; Newton's sqrt implementation written with internal definitions and lexical scoping
-;;; newton-sqrt is the only procedure visible to the user
+;;; Proc name: newton-sqrt
 
 (define (square x)
   (* x x))
@@ -18,3 +18,6 @@
         guess
         (sqrt-iter (improve guess))))
   (sqrt-iter 1.0))
+
+;;; Square root of 2. Expected value: 1.4
+(newton-sqrt 2)
