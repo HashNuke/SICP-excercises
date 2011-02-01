@@ -1,4 +1,6 @@
 #lang racket
+;;; Newton's sqrt implementation
+;;; Proc name: newton-sqrt
 (define (improve guess x)
   (average guess (/ x guess)))
 
@@ -19,5 +21,3 @@
 
 (define (newton-sqrt x)
   (sqrt-iter 1.0 x))
-
-(newton-sqrt 144)
